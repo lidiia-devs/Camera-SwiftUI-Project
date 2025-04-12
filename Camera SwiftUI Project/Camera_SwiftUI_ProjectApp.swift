@@ -11,7 +11,8 @@ import SwiftUI
 struct Camera_SwiftUI_ProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraImageView()
+                .modelContainer(for: [StoredImage.self])
         }
     }
 }
